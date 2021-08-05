@@ -35,11 +35,11 @@ btn_reset.onclick = () => {
 
 btn_search.onclick = () => {
   text.innerHTML = original;
-  word = original.split(" ")
-  var sreach = " "
+  word = original.split(" ");
+  var sreach = " ";
   for(let i=0; i<word.length; i++){
     if(word[i].length > length.value){
-      search += "<span style = 'background-color: " + color.value +"' >" +word[i] + "</span>" + " "
+      search += "<span style = 'color: " + color.value +"' >" +word[i] + "</span>" + " "
     }else{
       sreach += word[i]+" "
     }
